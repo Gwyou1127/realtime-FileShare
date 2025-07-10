@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파일 공유</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="app">
+        <div class="main-screen">
+            <div class="form">
+                <h2>파일 공유 서비스</h2>
+                <div class="description">
+                    실시간으로 파일을 주고받으세요
+                </div>
+                <div class="button-container">
+                    <div class="form-input">
+                        <button id="send-file-btn">파일 보내기</button>
+                    </div>
+                    <div class="form-input">
+                        <button id="receive-file-btn">파일 받기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 파일 보내기 버튼 클릭
+            document.getElementById('send-file-btn').addEventListener('click', function() {
+                window.location.href = 'sender.html';
+            });
+
+            // 파일 받기 버튼 클릭
+            document.getElementById('receive-file-btn').addEventListener('click', function() {
+                window.location.href = 'receiver.html';
+            });
+        });
+    </script>
+</body>
+</html>

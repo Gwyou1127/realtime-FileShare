@@ -1,0 +1,21 @@
+# node_modules: 설치된 패키지 (필수 아님)
+node_modules/
+
+# 환경 변수 파일
+.env
+
+# 운영체제/에디터 임시 파일
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Visual Studio Code 설정 (선택)
+.vscode/
+
+# npm 캐시 등
+.npm/
+
+# OS 백업
+*.swp
+*.swo
