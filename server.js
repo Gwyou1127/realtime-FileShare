@@ -49,6 +49,7 @@ io.on("connection", function(socket) {
     
 }); // 👈 이 괄호 안에 모든 socket 이벤트가 들어가야 함
 
-server.listen(5000, function(){
-    console.log("Server running on port 5000");
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, function(){
+    console.log("Server running on port", PORT);
 });
